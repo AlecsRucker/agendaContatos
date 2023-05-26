@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textViewTituloEdicao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Editar Contato"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textViewNomeEdicao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nome" />
+
+        <EditText
+            android:id="@+id/editTextNomeEdicao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="Nome do Contato"
+            android:minHeight="48dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textViewTelefoneEdicao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Telefone" />
+
+        <EditText
+            android:id="@+id/editTextTelefoneEdicao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="phone"
+            android:hint="Número de Telefone"
+            android:minHeight="48dp"/>
+
+        <Spinner
+            android:id="@+id/spinnerTipoTelefoneEdicao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/tipos_telefone"
+            android:prompt="@string/selecione_tipo"
+            android:contentDescription="Selecione o Tipo de Telefone"
+            android:minHeight="48dp"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonSalvarEdicao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Salvar" />
+
+</LinearLayout>

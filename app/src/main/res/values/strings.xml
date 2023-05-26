@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">AppDiaristas</string>
+
+    <string name="selecione_tipo">Selecione o tipo</string>
+    <string-array name="tipos_telefone">
+        <item>Casa</item>
+        <item>Celular</item>
+        <item>Trabalho</item>
+    </string-array>
+
+</resources>
